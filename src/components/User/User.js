@@ -1,16 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function({ user }) {
+function User(props) {
+  const { user } = props;
+
   return (
-    <>
-      <td>{user.name}</td>
-      <td>
-        <a href={`mailto:${user.email}`}
-            className="text-white"
-        >
-          {user.email}
-        </a>
-      </td>
-    </>
+    <a className="user-info" href={`mailto:${user.email}`}>{user.name}</a>
   );
 }
+
+User.defaultProps = {
+  user: {},
+};
+
+User.propTypes = {
+  user: PropTypes.objectOf,
+};
+
+export default User;
