@@ -2,7 +2,7 @@
 
 ## Demo link
 
-Add link here: [DEMO LINK](https://dsrtf0x-git.github.io/react_dynamic-list-of-todos/)
+Add link here: [DEMO LINK](https://zelenskiys.github.io/react_dynamic-list-of-todos/)
 
 
 ## Task 
